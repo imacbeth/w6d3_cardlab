@@ -27,8 +27,8 @@ public class PlayerTest {
 
     @Test
     public void canGetCards(){
-        player.getCard(card1);
-        player.getCard(card2);
+        player.putCardInHand(card1);
+        player.putCardInHand(card2);
         assertEquals(2, player.cardCount());
     }
 

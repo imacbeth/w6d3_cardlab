@@ -25,7 +25,21 @@ public class GameTest {
     public void hasPlayers(){
         System.out.println(game.getPlayer(0).getName());
         assertEquals(2, game.playerCount());
+    }
 
+    @Test
+    public void canDealToPlayer(){
+        game.setUpGame();
+        game.dealCardToPlayer(player1);
+        assertEquals(1, player1.cardCount());
+    }
+
+    @Test
+    public void canCheckWinner(){
+        deck.createDeck();
+        game.dealCardToPlayer(player1);
+        game.dealCardToPlayer(player2);
+        assertEquals(player2, game.checkWinner());
     }
 
 }

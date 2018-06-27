@@ -15,7 +15,7 @@ public class Player {
         return hand.size();
     }
 
-    public void getCard(Card card){
+    public void putCardInHand(Card card){
         hand.add(card);
     }
 
@@ -23,4 +23,7 @@ public class Player {
         return this.name;
     }
 
+    public Card getCard() {
+        return hand.remove(0);
+    }
 }
