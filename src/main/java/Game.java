@@ -54,5 +54,25 @@ public class Game {
         checkWinner();
     }
 
+    public void play2CardGame() {
+        setUpGame();
+        dealCardToPlayer(players[0]);
+        dealCardToPlayer(players[1]);
+        dealCardToPlayer(players[0]);
+        dealCardToPlayer(players[1]);
+        if (players[0].handTotal() > players[1].handTotal()) {
+            System.out.println(players[0].getName() + " has " + players[0].handTotal());
+            System.out.println(players[1].getName() + " has " + players[1].handTotal());
+            System.out.println(players[0].getName() + " wins!");
+        } else if (players[0].handTotal() < players[1].handTotal()) {
+            System.out.println(players[0].getName() + " has " + players[0].handTotal());
+            System.out.println(players[1].getName() + " has " + players[1].handTotal());
+            System.out.println(players[1].getName() + " wins!");
+        } else {
+            System.out.println(players[0].getName() + " has " + players[0].handTotal());
+            System.out.println(players[1].getName() + " has " + players[1].handTotal());
+            System.out.println("It's a draw!!!!");
+        }
+    }
 
 }

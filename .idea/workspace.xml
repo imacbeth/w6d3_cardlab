@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="230a3b40-f9ce-4616-a055-20fca791b5ba" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,12 +71,14 @@
       <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="36" selection-start-line="36" selection-start-column="2" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="367">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1217#1218#0" expanded="true" />
                 <element signature="e#1253#1254#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,8 +156,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="313">
+              <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
               <folding>
                 <element signature="e#254#255#0" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
@@ -578,7 +579,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.canPlay1CardGame">
+  <component name="RunManager" selected="JUnit.GameTest.canPlay2CardGame">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -616,13 +617,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GameTest.canDealToPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.canPlay1CardGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IonaCan_w6d3_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="canDealToPlayer" />
+      <option name="METHOD_NAME" value="canPlay1CardGame" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -633,13 +634,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GameTest.canPlay1CardGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.canPlay2CardGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IonaCan_w6d3_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="canPlay1CardGame" />
+      <option name="METHOD_NAME" value="canPlay2CardGame" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -706,19 +707,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GameTest.canDealToPlayer" />
       <item itemvalue="JUnit.GameTest.canCountScore" />
       <item itemvalue="JUnit.GameTest.canCountHandTotal" />
       <item itemvalue="JUnit.GameTest.canPlay1CardGame" />
       <item itemvalue="JUnit.PlayerTest.canGetCards" />
+      <item itemvalue="JUnit.GameTest.canPlay2CardGame" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.canPlay2CardGame" />
         <item itemvalue="JUnit.GameTest.canPlay1CardGame" />
         <item itemvalue="JUnit.PlayerTest.canGetCards" />
         <item itemvalue="JUnit.GameTest.canCountHandTotal" />
         <item itemvalue="JUnit.GameTest.canCountScore" />
-        <item itemvalue="JUnit.GameTest.canDealToPlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -736,18 +737,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 06m 17s.xml">
-      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 06m 18s.xml">
-      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 06m 20s.xml">
-      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 06m 21s.xml">
-      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 06m 22s.xml">
       <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
     </history-entry>
@@ -766,6 +755,18 @@
     <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 06m 29s.xml">
       <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 10m 36s.xml">
+      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 10m 39s.xml">
+      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 10m 41s.xml">
+      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_canPlay1CardGame - 2018.06.27 at 14h 10m 42s.xml">
+      <configuration name="GameTest.canPlay1CardGame" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="6" />
@@ -773,7 +774,7 @@
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -781,7 +782,7 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3286119" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22103004" />
@@ -885,6 +886,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -904,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="313">
+          <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
           <folding>
             <element signature="e#254#255#0" expanded="true" />
             <element signature="e#298#299#0" expanded="true" />
@@ -915,26 +928,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="36" selection-start-line="36" selection-start-column="2" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="367">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1217#1218#0" expanded="true" />
             <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -53,4 +53,10 @@ public class GameTest {
     public void canPlay1CardGame(){
         game.play1CardGame();
     }
+
+    @Test
+    public void canPlay2CardGame(){
+        game.play2CardGame();
+    }
+
 }
