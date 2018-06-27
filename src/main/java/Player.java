@@ -5,9 +5,9 @@ public class Player {
     private String name;
     private ArrayList<Card> hand;
 
-    public Player(String name, ArrayList<Card> hand){
+    public Player(String name){
         this.name = name;
-        this.hand = hand;
+        this.hand = new ArrayList<>();
     }
 
 
@@ -15,6 +15,9 @@ public class Player {
         return hand.size();
     }
 
+    public void getCard(Card card){
+        hand.add(card);
+    }
 
 
 }

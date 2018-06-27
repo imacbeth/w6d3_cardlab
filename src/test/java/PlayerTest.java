@@ -17,13 +17,18 @@ public class PlayerTest {
         hand = new ArrayList<>();
         card1 = new Card(SuitType.HEARTS, RankType.ACE);
         card2 = new Card(SuitType.SPADES, RankType.TEN);
-        hand.add(card1);
-        hand.add(card2);
-        player = new Player("Iona", hand);
+        player = new Player("Iona");
     }
 
     @Test
     public void hasCards(){
+        assertEquals(0, player.cardCount());
+    }
+
+    @Test
+    public void canGetCards(){
+        player.getCard(card1);
+        player.getCard(card2);
         assertEquals(2, player.cardCount());
     }
 
