@@ -5,7 +5,6 @@ public class Game {
 
     public Game(Deck deck, Player[] players) {
         this.deck = deck;
-        this.players = new Player[2];
         this.players = players;
     }
 
@@ -18,10 +17,8 @@ public class Game {
     }
 
     public void setUpGame() {
-        deck.createDeck();
         deck.shuffleDeck();
     }
-
 
     public void dealCardToPlayer(Player player) {
         Card card = this.deck.removeCard();
@@ -29,37 +26,6 @@ public class Game {
     }
 
     public void checkWinner() {
-        Card cardOfPlayer1 = players[0].getCard();
-        Card cardOfPlayer2 = players[1].getCard();
-
-        if (cardOfPlayer1.getValueFromEnum() == cardOfPlayer2.getValueFromEnum()) {
-            System.out.println("It's a draw!");
-
-        } else if (cardOfPlayer1.getValueFromEnum() > cardOfPlayer2.getValueFromEnum()) {
-            System.out.println(players[0].getName() + " plays " + cardOfPlayer1.getRank());
-            System.out.println(players[1].getName() + " plays " + cardOfPlayer2.getRank());
-            System.out.println(players[0].getName() + " wins!");
-        } else {
-            System.out.println(players[0].getName() + " plays " + cardOfPlayer1.getRank());
-            System.out.println(players[1].getName() + " plays " + cardOfPlayer2.getRank());
-            System.out.println(players[1].getName() + " wins!");
-        }
-    }
-
-
-    public void play1CardGame() {
-        setUpGame();
-        dealCardToPlayer(players[0]);
-        dealCardToPlayer(players[1]);
-        checkWinner();
-    }
-
-    public void play2CardGame() {
-        setUpGame();
-        dealCardToPlayer(players[0]);
-        dealCardToPlayer(players[1]);
-        dealCardToPlayer(players[0]);
-        dealCardToPlayer(players[1]);
         if (players[0].handTotal() > players[1].handTotal()) {
             System.out.println(players[0].getName() + " has " + players[0].handTotal());
             System.out.println(players[1].getName() + " has " + players[1].handTotal());
@@ -75,4 +41,18 @@ public class Game {
         }
     }
 
+
+    public void playCardGame(int numberOfCards) {
+        deck.shuffleDeck();
+        dealCards(numberOfCards);
+        checkWinner();
+    }
+
+    private void dealCards(int numberOfCards){
+        for (int i = 0; i < numberOfCards; i++){
+            for (Player player : players) {
+                dealCardToPlayer(player);
+            }
+        }
+    }
 }

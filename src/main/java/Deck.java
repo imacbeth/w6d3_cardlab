@@ -4,26 +4,22 @@ import java.util.Collections;
 public class Deck {
 
     private ArrayList<Card> cards;
-    private Card card;
 
     public Deck() {
         this.cards = new ArrayList<>();
-    }
-
-    public ArrayList<Card> createDeck() {
-
         for (SuitType suit : SuitType.values()) {
             for (RankType rank : RankType.values()) {
-                card = new Card(suit, rank);
-                cards.add(card);
+                cards.add(new Card(suit, rank));
             }
         }
-        return cards;
     }
 
-    public ArrayList<Card> shuffleDeck(){
+    public void shuffleDeck(){
         Collections.shuffle(cards);
-        return cards;
+    }
+
+    public int getCardCount(){
+        return cards.size();
     }
 
     public Card removeCard(){

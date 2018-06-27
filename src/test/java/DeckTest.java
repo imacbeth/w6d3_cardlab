@@ -10,13 +10,11 @@ public class DeckTest {
     @Before
     public void before() {
         deck = new Deck();
-
-
     }
 
     @Test
     public void canCreateDeck(){
-        assertEquals(52, deck.createDeck().size());
+        assertEquals(52, deck.getCardCount());
     }
 
 
