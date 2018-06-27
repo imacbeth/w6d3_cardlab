@@ -19,5 +19,8 @@ public class Player {
         hand.add(card);
     }
 
+    public String getName(){
+        return this.name;
+    }
 
 }
