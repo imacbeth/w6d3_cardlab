@@ -41,5 +41,11 @@ public class GameTest {
         game.dealCardToPlayer(player2);
         assertEquals(player2, game.checkWinner());
     }
-
+    @Test
+    public void canCountHandTotal(){
+        deck.createDeck();
+        game.dealCardToPlayer(player1);
+        game.dealCardToPlayer(player1);
+        assertEquals(3, player1.handTotal());
+    }
 }
