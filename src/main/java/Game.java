@@ -13,27 +13,46 @@ public class Game {
         return this.players.length;
     }
 
-    public Player getPlayer(int index){
+    public Player getPlayer(int index) {
         return this.players[index];
     }
 
-    public void setUpGame(){
+    public void setUpGame() {
         deck.createDeck();
         deck.shuffleDeck();
     }
 
 
-    public void dealCardToPlayer(Player player){
+    public void dealCardToPlayer(Player player) {
         Card card = this.deck.removeCard();
         player.putCardInHand(card);
     }
 
-    public Player checkWinner() {
-        Card cardOfPlayer1= players[0].getCard();
-        Card cardOfPlayer2= players[1].getCard();
-        if (cardOfPlayer1.getValueFromEnum()>cardOfPlayer2.getValueFromEnum())
-            return players[0];
-        else
-            return players[1];
+    public void checkWinner() {
+        Card cardOfPlayer1 = players[0].getCard();
+        Card cardOfPlayer2 = players[1].getCard();
+
+        if (cardOfPlayer1.getValueFromEnum() == cardOfPlayer2.getValueFromEnum()) {
+            System.out.println("It's a draw!");
+
+        } else if (cardOfPlayer1.getValueFromEnum() > cardOfPlayer2.getValueFromEnum()) {
+            System.out.println(players[0].getName() + " plays " + cardOfPlayer1.getRank());
+            System.out.println(players[1].getName() + " plays " + cardOfPlayer2.getRank());
+            System.out.println(players[0].getName() + " wins!");
+        } else {
+            System.out.println(players[0].getName() + " plays " + cardOfPlayer1.getRank());
+            System.out.println(players[1].getName() + " plays " + cardOfPlayer2.getRank());
+            System.out.println(players[1].getName() + " wins!");
+        }
     }
+
+
+    public void play1CardGame() {
+        setUpGame();
+        dealCardToPlayer(players[0]);
+        dealCardToPlayer(players[1]);
+        checkWinner();
+    }
+
+
 }

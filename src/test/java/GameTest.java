@@ -34,18 +34,23 @@ public class GameTest {
         assertEquals(1, player1.cardCount());
     }
 
-    @Test
-    public void canCheckWinner(){
-        deck.createDeck();
-        game.dealCardToPlayer(player1);
-        game.dealCardToPlayer(player2);
-        assertEquals(player2, game.checkWinner());
-    }
+//    @Test
+//    public void canCheckWinner(){
+//        deck.createDeck();
+//        game.dealCardToPlayer(player1);
+//        game.dealCardToPlayer(player2);
+//        assertEquals(player2, game.checkWinner());
+//    }
     @Test
     public void canCountHandTotal(){
         deck.createDeck();
         game.dealCardToPlayer(player1);
         game.dealCardToPlayer(player1);
         assertEquals(3, player1.handTotal());
+    }
+
+    @Test
+    public void canPlay1CardGame(){
+        game.play1CardGame();
     }
 }

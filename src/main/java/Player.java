@@ -24,7 +24,7 @@ public class Player {
     }
 
     public Card getCard() {
-        return hand.remove(0);
+        return hand.get(0);
     }
 
     public int handTotal() {
